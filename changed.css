@@ -1,0 +1,750 @@
+/* General styles */
+
+
+/* font-family(url) */
+
+body, html {
+   
+    /* max-width: 2000px; */
+    font-family: 'Mitr', sans-serif;
+}
+
+/* Header styles */
+
+.nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(40, 73, 134);
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* Mobile Styles */
+
+/* Show the toggle button on smaller screens */
+@media (max-width: 767px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Toggle Button Styles */
+    .navbar-toggler {
+        display: none; /* Hide the toggle button by default */
+        background-color: rgb(40, 73, 134);
+        color: whitesmoke;
+        border: none;
+        padding: 10px;
+    }
+
+}
+
+/* Hero Section */
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    font-size: 16px;
+    /* margin: 0 auto; */
+}
+
+.carousel-inner .item img {
+    
+    background-color: #02284e;
+    object-fit: cover;
+    position: relative;
+    mix-blend-mode: multiply;
+    
+   
+  
+    
+}
+
+
+.carousel-inner {
+    background:url('../img/bg/diagonalnoise.png');
+    position: relative;
+}
+
+.carousel-inner p{
+    font-size: 14px;
+}
+.carousel-inner .item {
+    /* background-color: rgba(14, 45, 129, 0.7); */
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* background-color: rgb(5, 5, 121, 0.7), ; */
+    /* background: linear-gradient(45deg); */
+   
+}
+
+.item1{
+    
+    
+
+}
+
+.back{
+    background-color: rgb(5, 5, 121, 0.8);
+}
+
+
+
+/* About Section */
+.about {
+  
+    /* padding: 60px 0; */
+    color: #87888a;
+    /* text-align: center; */
+}
+
+.about h2 {
+    font-size: 26px;
+    color: #02284e;
+    margin-top: 0px;
+    margin-bottom: 0px;;
+    
+}
+
+/* .about .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.about .content p {
+    flex: 2;
+    margin-top: 20px;
+    text-align: justify;
+    /* margin-left: 20px; */
+    margin-right: 30px;
+}
+
+.about .content img {
+    width: 100%;
+    /* padding: 15px; */
+    height: 100%;
+   
+}
+
+/* Case Studies Section */
+
+
+.case-studies .section-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.case-studies .card {
+    border: none;
+    /* border-radius: 5px; */
+    overflow: hidden;
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+.case-studies .card:hover {
+    /* transform: translateY(-5px); */
+}
+
+.case-studies .card-img-top {
+    /* height: 200px; */
+    /* object-fit: cover; */
+}
+.case-studies .row {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.case-studies .card-body {
+    padding: 0px;
+    text-align: left;
+}
+
+
+
+.caption-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.caption-text {
+    position: absolute;
+    top: 20px; /* Adjust to position the caption vertically */
+    left: 10px; /* Adjust to position the caption horizontally */
+    color: whitesmoke; /* Caption text color */
+    padding: 5px 10px; /* Padding around the caption text */
+    border-radius: 5px; /* Optional: Rounding the corners of the caption */
+  
+}
+
+.card-img-full {
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+    object-fit: cover; /* Ensure the image covers the entire card */
+    position: relative;
+    z-index: 0; /* Ensure the image stays behind the caption */
+    border-radius: 0PX; /* Remove border radius if applied by default */
+}
+
+
+
+/* Menu Section */
+
+.menu .row{
+    margin-top: 40px;
+}
+.menu .image-card .image-text{
+    width: 100%;
+    padding-left: 20px;
+}
+
+.image-card h3{
+    /* padding: 10px; */
+    padding-left: 20px;
+}
+.image-card p{
+    padding-left: 20px;
+    text-align: justify;
+}
+.image-card .image-text{
+       padding: 7px;
+       font-size: 14px;
+}
+.image-card .image-text li{
+    padding: 20px;
+}
+
+
+
+/* COUNTER SECTION */
+
+.counter {
+
+    background-image: url(Images/counter-bg.png);
+    color: #fff;
+    /* padding-top: 40px; */
+    /* margin-top: 40px; */
+    /* background-color: #023a72; */
+    box-shadow: inset 0 0 0 1000px rgba(9, 11, 102, 0.3);
+    text-align: center;
+    /* display: flex; */
+
+
+    /* justify-content: space-around; */
+}
+
+.statistics {
+    background-color: rgba(5, 5, 71, 0.4);
+}
+
+.statistics img{
+     /* height: min-content;
+    width: min-content;  */
+    justify-content: center;
+  
+    align-items: center; 
+    vertical-align: middle;
+   
+}
+
+.statistics .ROW .COL{
+    /* width: 25%; */
+}
+
+.statistics h2 {
+    color: rgb(5, 5, 121);
+    
+}
+.statistics p {
+    color: rgb(8, 8, 121);
+    font-size: 14px;
+}
+
+
+/* Team Section */
+.team {
+    font-size: 14px;
+    padding: 20px 0;
+    padding-bottom: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member img {
+    border-radius: 50%;
+   
+     border: 2px solid rgb(6, 6, 119);
+    height: 200px; 
+}
+
+.team-member h4 {
+    margin: 10px 0 5px 0;
+    font-size: 18px;
+}
+
+.team-member p {
+    margin: 0;
+    color: gray;
+    
+    /* width: 20%; */   
+}
+
+/* Testimonials Section */
+.test {
+    /* background-color: #f4f4f4; */
+    /* padding: 40px 0; */
+   background-image: url(Images/testimonial-bg.png);
+    /* padding-top: 20px; */
+    text-align: center;
+}
+
+.testimonial{
+    background-color: rgb(5, 5, 121, 0.8);
+}
+
+.testimonial img{
+  
+}
+.testimonial-grid {
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+}
+
+
+
+
+.testimonial h4 {
+    margin-top: 10px;
+}
+
+.testimonial p {
+    margin-top: 10px;
+    color: rgb(206, 193, 193);
+    font-size: 14PX;
+    text-align: center;
+}
+
+.blockquote-custom {
+    position: relative;
+    font-size: 14px;
+    
+    border: 2px solid rgb(8, 8, 85);
+  }
+  
+  .blockquote-custom-icon {
+    width: 50px;
+    background-color: #0d4781;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    left: 50px;
+  }
+  
+
+  .blockquote-custom img{
+  border-radius: 50%;
+  }
+
+/* Blog Section */
+.blog {
+    padding: 20px 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.blog-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog-post {
+    width: 30%;
+    margin: 0 10px;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-post h3 {
+    margin:20px;
+    text-align: justify;   
+    font-size: 18px;
+}
+
+.blog-post p {
+    margin: 20px;
+    font-size: 14px;
+    text-align: justify;   
+    color: #666;
+}
+
+
+.blog{
+    padding-bottom: 40px;
+}
+  
+
+
+/* footer style */
+
+
+.footer-content {
+    /* padding: 20px; */
+    /* padding-top: 40px; */
+}
+
+footer {
+    background-color: #02284e;
+    color: rgb(238, 238, 238);
+
+}
+
+.footer-bottom {
+    padding: 30px;
+    text-align: start;
+    font-size: 0.875rem;
+    color: rgb(238, 238, 238);
+}
+
+.footer-info {
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    
+}
+.footer-info h4{
+    text-align: start;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 1rem;
+}
+.footer-info p{
+    font-size: 14px;
+    color: rgb(168, 168, 168);
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+ .footer-column li { 
+    list-style-type: none;
+    padding: 7px;
+    font-size: 14px;
+    color: rgb(168, 168, 168);
+
+    /* padding-top: 6px; */
+    /* padding-bottom: 6px;/ */
+ }
+
+ .footerend{
+    padding: 30px;
+ }
+.footerrr{
+    font-size: 14px;
+    /* padding-left: 18%; */
+   margin: o auto;
+}
+
+
+ /* General Responsive Styles */
+body, html {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+   
+   /* Nav Bar */
+
+/* 
+   .head2 .row {
+    text-align: center;
+    flex-direction: column;
+}
+
+.head2 .col-lg-7 {
+    margin-bottom: 20px;
+}
+
+.head2 .col {
+    text-align: center;
+}
+
+.head2 .col span {
+    display: block;
+} */
+   
+   
+    /* About Section */
+    .about .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .content img {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+
+    /*  */
+
+    /* Case Studies Section */
+
+    /* .case-studies .row {
+        margin-left: 2rem;
+        
+        margin-right: 2rem;
+    }
+
+    .case-studies .card-body {
+        padding: 0.75rem;
+    } */
+
+    
+
+    /* Team Section */
+    .team-grid {
+        flex-direction: column;
+        
+        align-items: center;
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Testimonials Section */
+    .testimonial-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Blog Section */
+    .blog-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-post {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Footer Section */
+    .footer-info {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    footer .container {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .top-bar p {
+        font-size: 10px;
+    }
+
+    .head2 .col-lg-7,
+    .head2 .col-lg-5 {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+
+    /* About Section */
+    .about h2 {
+        font-size: 28px;
+    }
+
+    /* Statistics Section */
+    .statistics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statistics h2 {
+        font-size: 24px;
+    }
+
+    .statistics p {
+        font-size: 12px;
+    }
+
+    /* Case Studies Section */
+    .case-studies .row {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .case-studies .card {
+        margin-bottom: 20px;
+    }
+
+    /* Team Section */
+    .team-grid {
+        flex-direction: column;
+    }
+
+    .team-member img {
+        /* width: 120px;
+        height: 120px; */
+    }
+
+    .team-member h4 {
+        font-size: 16px;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+        text-align: center;
+    }
+    
+    .blockquote-custom {
+        position: relative;
+        font-size: 1.1rem;
+    }
+    
+    .blockquote-custom-icon {
+        position: absolute;
+        top: -20px;
+        left: 50px;
+        width: 40px;
+        height: 40px;
+        background-color: #007bff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    @media (max-width: 991px) {
+        .blockquote-custom {
+            padding: 15px;
+        }
+    
+        .row > .col-md-6 {
+            margin-bottom: 20px;
+        }
+    }
+    
+    /* Blog Section */
+    .blog-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-post {
+        width: 100%;
+    }
+
+    /* Footer Section */
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+
+
+  
+    
+
+
